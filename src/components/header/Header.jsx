@@ -54,7 +54,6 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden z-10 bg-white w-full absolute top-[86px] left-0 shadow-md">
           <div className="flex flex-col items-center gap-4 py-6">
@@ -63,7 +62,7 @@ const Header = () => {
                 key={link.name}
                 onClick={() => {
                   setClickedLink(index);
-                  setIsMenuOpen(false); // Close menu on link click
+                  setIsMenuOpen(false);
                 }}
                 className={`flex cursor-pointer text-[16px] font-semibold ${
                   clickedLink === index ? "text-[#111010]" : "text-[#818181]"
@@ -79,8 +78,7 @@ const Header = () => {
           </div>
         </div>
       )}
-
-      <hr />
+      <hr className="border-[1px] border-[#0000001A]" />
     </>
   );
 };

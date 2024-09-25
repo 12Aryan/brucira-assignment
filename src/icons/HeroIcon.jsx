@@ -1,7 +1,7 @@
 const HeroIcon = () => {
   return (
     <svg
-      className="maxW-1046 max-368"
+      className="max-w-[1046px ]max-h-[368px]"
       width="100%"
       height="100%"
       viewBox="0 0 1046 368"

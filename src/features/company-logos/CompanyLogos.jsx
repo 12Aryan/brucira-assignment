@@ -1,4 +1,3 @@
-import React from "react";
 import MarqueeComponent from "../../components/marquee/MarqueeComponent";
 import DrawInbox from "../../icons/DrawInbox";
 import Wipro from "../../icons/Wipro";
@@ -19,10 +18,11 @@ const CompanyLogos = () => {
     <Igt key="igt-logo" />,
     <Healthify key="healthify-logo" />,
     <Swiggy key="swiggy-logo" />,
+    <MyCircle key="my-circle-logo" />,
   ];
   return (
-    <div className="py-[60px]">
-      <MarqueeComponent styles={"flex items-center space-x-16 px-4"}>
+    <div className="xl:py-[60px] py-0 ">
+      <MarqueeComponent styles={"flex items-center space-x-16 "}>
         {companyLogos}
       </MarqueeComponent>
     </div>
