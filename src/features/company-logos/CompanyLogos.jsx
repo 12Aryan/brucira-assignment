@@ -1,0 +1,32 @@
+import React from "react";
+import MarqueeComponent from "../../components/marquee/MarqueeComponent";
+import DrawInbox from "../../icons/DrawInbox";
+import Wipro from "../../icons/Wipro";
+import Indeed from "../../icons/Indeed";
+import Ikea from "../../icons/Ikea";
+import Igt from "../../icons/Igt";
+import Healthify from "../../icons/Healthify";
+import Swiggy from "../../icons/Swiggy";
+import MyCircle from "../../icons/MyCircle";
+
+const CompanyLogos = () => {
+  const companyLogos = [
+    <DrawInbox key="draw-inbox-logo" />,
+    <Wipro key="wipro-logo" />,
+    <Indeed key="indeed-logo" />,
+    <MyCircle key="my-circle-logo" />,
+    <Ikea key="ikea-logo" />,
+    <Igt key="igt-logo" />,
+    <Healthify key="healthify-logo" />,
+    <Swiggy key="swiggy-logo" />,
+  ];
+  return (
+    <div className="py-[60px]">
+      <MarqueeComponent styles={"flex items-center space-x-16 px-4"}>
+        {companyLogos}
+      </MarqueeComponent>
+    </div>
+  );
+};
+
+export default CompanyLogos;
