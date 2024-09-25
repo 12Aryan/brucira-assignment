@@ -21,7 +21,7 @@ const CompanyLogos = () => {
     <MyCircle key="my-circle-logo" />,
   ];
   return (
-    <div className="xl:py-[60px] py-0 ">
+    <div className="xl:py-[60px] pt-3 ">
       <MarqueeComponent styles={"flex items-center space-x-16 "}>
         {companyLogos}
       </MarqueeComponent>

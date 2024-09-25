@@ -31,30 +31,30 @@ const accordionData = [
 
 const Accordion = ({ title, content, isOpen, onClick, id }) => {
   return (
-    <div>
+    <div className="cursor-pointer">
       {id === 1 && <hr className="border-[1px] border-[#0000001A]" />}
       <div
         onClick={onClick}
-        className={`flex flex-col pt-6 ${!isOpen && "pb-6"}`}
+        className={`flex flex-col pt-4 md:pt-6 ${!isOpen && "pb-4  md:pb-6 "}`}
       >
         {isOpen && (
           <div
-            className="text-xl text-[#EF001C] "
+            className="text-xl text-[#EF001C]"
             style={{ width: "max-content" }}
           >{`0${id}`}</div>
         )}
         <div
           className={` ${
             isOpen
-              ? "text-[#111010] text-[24px] "
-              : "text-[#aaa9a9] text-[20px] "
+              ? "text-[#111010] md:text-[24px] text-[20px] "
+              : "text-[#aaa9a9] md:text-[20px] text-[16px]  "
           } `}
         >
           {title}
         </div>
       </div>
       {isOpen && (
-        <div className="text-sm font-normal text-[#111010CC] py-2 pb-6">
+        <div className="text-sm font-normal text-[#111010CC] py-2 md:pb-6 pb-4">
           {content}
         </div>
       )}
@@ -73,15 +73,15 @@ const ImageAccordion = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row md:items-normal items-center w-full">
-      <div className="md:w-[40%] w-[80%]">
+    <div className="flex flex-col md:flex-row md:items-normal items-center w-full md:gap-[51px] gap-6">
+      <div className="md:w-[40%] w-[70%]">
         <img
           src={currentImage}
           alt="Accordion related"
           className="w-full h-auto max-h-[451px] max-w-[484px] object-cover"
         />
       </div>
-      <div className="w-full md:w-1/2 p-6">
+      <div className="w-full md:w-1/2 ">
         {accordionData.map((item, index) => (
           <Accordion
             key={item.id}
