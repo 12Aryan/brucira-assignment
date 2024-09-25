@@ -1,4 +1,3 @@
-import React from "react";
 import WeAreGlobalImg from "../../images/WeAreGlobal.png";
 
 const WeAreGlobal = () => {

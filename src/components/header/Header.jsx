@@ -23,8 +23,8 @@ const Header = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex gap-10 items-center">
-          <div className="flex gap-10">
+        <div className="hidden lg:flex gap-3 lg:gap-10 items-center">
+          <div className="flex gap-3 lg:gap-10 ">
             {navLinks.map((link, index) => (
               <div
                 key={link.name}
@@ -44,7 +44,7 @@ const Header = () => {
         </div>
 
         {/* Hamburger Menu Icon */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-2xl"
@@ -55,7 +55,7 @@ const Header = () => {
       </header>
 
       {isMenuOpen && (
-        <div className="md:hidden z-10 bg-white w-full absolute top-[86px] left-0 shadow-md">
+        <div className="lg:hidden z-10 bg-white w-full absolute top-[86px] left-0 shadow-md">
           <div className="flex flex-col items-center gap-4 py-6">
             {navLinks.map((link, index) => (
               <div
