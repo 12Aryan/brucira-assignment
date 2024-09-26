@@ -81,14 +81,15 @@ const ContactUs = () => {
         />
         <hr className="border-[1px] border-[#808082]" />
       </div>
-
-      <ButtonComponent
-        rightIcon={<RightIcon />}
-        onClick={() => {}}
-        styles="flex mt-2 justify-center items-center bg-[#EF001C] text-[14px] rounded-[34px] px-8 py-4 text-white gap-2.5 md:w-[468px] h-[60px] w-[250px]"
-      >
-        Contact Us
-      </ButtonComponent>
+      <div className="flex justify-center">
+        <ButtonComponent
+          rightIcon={<RightIcon />}
+          onClick={() => {}}
+          styles="flex mt-2 justify-center items-center bg-[#EF001C] text-[14px] rounded-[34px] px-8 py-4 text-white gap-2.5 md:w-[468px] h-[60px] w-[250px]"
+        >
+          Contact Us
+        </ButtonComponent>
+      </div>
     </form>
   );
 };

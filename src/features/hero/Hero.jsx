@@ -22,16 +22,18 @@ const Hero = () => {
               </div>
             </div>
             <div className="flex md:flex-row flex-col gap-[21px]">
-              <ButtonComponent
-                onClick={() =>
-                  alert("This button will not perform any actions")
-                }
-                rightIcon={<RightIcon />}
-                styles="flex items-center justify-center gap-2.5 md:px-8 h-[60px] bg-[#EF001C] md:w-auto xs:w-[270px] sm:w-[350px]  font-bold rounded-[34px] text-white xs:text-xs sm:text-sm md:text-sm xl:text-base"
-              >
-                <div>GET PROFESSIONAL VIDEO SERVICES</div>
-              </ButtonComponent>
-              <div className="flex gap-3 items-center">
+              <div className="flex xs:w-full md:max-w-max justify-center md:justify-normal ">
+                <ButtonComponent
+                  onClick={() =>
+                    alert("This button will not perform any actions")
+                  }
+                  rightIcon={<RightIcon />}
+                  styles="flex items-center justify-center gap-2.5 md:px-8 h-[60px] bg-[#EF001C] md:w-auto xs:w-[270px] sm:w-[350px]  font-bold rounded-[34px] text-white xs:text-xs sm:text-sm md:text-sm xl:text-base"
+                >
+                  <div>GET PROFESSIONAL VIDEO SERVICES</div>
+                </ButtonComponent>
+              </div>
+              <div className="flex gap-3 items-center justify-center md:justify-normal">
                 <div>
                   <UserGroup />
                 </div>
@@ -41,7 +43,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-end flex-shrink-0">
+          <div className="flex items-end flex-shrink-0 justify-center md:justify-normal ">
             <img
               src={showReel}
               alt="show reel img"

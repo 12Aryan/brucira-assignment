@@ -8,6 +8,7 @@ import Testimony from "./features/testimony/Testimony";
 import FAQs from "./features/FAQs/FAQs";
 import StartSomethingNew from "./features/start-something-new/StartSomethingNew";
 import UnleashImpact from "./features/unleash-impact/UnleashImpact";
+import Footer from "./components/footer/Footer";
 const App = () => {
   return (
     <div className="bg-white font-sans">
@@ -20,6 +21,7 @@ const App = () => {
       <FAQs />
       <StartSomethingNew />
       <UnleashImpact />
+      <Footer />
     </div>
   );
 };
