@@ -63,11 +63,6 @@ const Accordion = () => {
           {openIndex !== index && (
             <hr className="border-[1px] border-[#11101026]" />
           )}
-          {index === faqItems.length - 1 &&
-            openIndex !== faqItems.length - 1 && (
-              <hr className="border-[1px] border-[#11101026]" />
-            )}
-          {/* Conditionally render the answer */}
           {openIndex === index && (
             <>
               <div className="pb-4 font-light text-sm md:text-sm lg:text-sm xl:text-base text-[#111010]">

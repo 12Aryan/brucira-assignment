@@ -6,6 +6,8 @@ import OurExpertise from "./features/expertise/OurExpertise";
 import WeAreGlobal from "./features/we-are-global/WeAreGlobal";
 import Testimony from "./features/testimony/Testimony";
 import FAQs from "./features/FAQs/FAQs";
+import StartSomethingNew from "./features/start-something-new/StartSomethingNew";
+import UnleashImpact from "./features/unleash-impact/UnleashImpact";
 const App = () => {
   return (
     <div className="bg-white font-sans">
@@ -16,6 +18,8 @@ const App = () => {
       <WeAreGlobal />
       <Testimony />
       <FAQs />
+      <StartSomethingNew />
+      <UnleashImpact />
     </div>
   );
 };

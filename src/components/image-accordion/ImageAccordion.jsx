@@ -1,6 +1,4 @@
 import { useState } from "react";
-
-// Dummy images (replace with real images)
 import InnovativeImage from "../../images/acc1.png";
 import ReliableImage from "../../images/acc2.png";
 import QualityImage from "../../images/acc1.png";
@@ -64,8 +62,8 @@ const Accordion = ({ title, content, isOpen, onClick, id }) => {
 };
 
 const ImageAccordion = () => {
-  const [activeIndex, setActiveIndex] = useState(null); // State to track active accordion
-  const [currentImage, setCurrentImage] = useState(InnovativeImage); // Initial image
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [currentImage, setCurrentImage] = useState(InnovativeImage);
 
   const handleAccordionClick = (index, image) => {
     setActiveIndex(index === activeIndex ? null : index);

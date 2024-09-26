@@ -13,52 +13,6 @@ const FAQs = () => {
           alt="FAQs"
         />
       </div>
-
-      {/* Accordion */}
-      {/* <div className="flex flex-col md:w-[60%] md:justify-normal w-auto justify-center">
-        <div className="flex justify-between items-center">
-          <div className="font-normal xs:text-sm md:text-base lg:text-base xl:text-lg text-[#111010] pb-6">
-            How do I sign up?
-          </div>
-          <FaAngleDown />
-        </div>
-        <hr className="border-[1px] border-[#11101026]" />
-        <div className="flex justify-between items-center">
-          <div className="font-normal xs:text-sm md:text-base lg:text-base xl:text-lg text-[#111010] py-6">
-            What information do I need to provide during the sign-up process?
-          </div>
-          <FaAngleDown />
-        </div>
-        <hr className="border-[1px] border-[#11101026]" />
-        <div className="flex justify-between items-center">
-          <div className="font-normal xs:text-sm md:text-base lg:text-base xl:text-lg text-[#111010] py-6">
-            Is my information secure during the sign-up process?{" "}
-          </div>
-          <FaAngleDown />
-        </div>
-        <hr className="border-[1px] border-[#11101026]" />
-        <div className="flex justify-between items-center">
-          <div className="font-normal xs:text-sm md:text-base lg:text-base xl:text-lg text-[#111010] py-6">
-            Who can apply?
-          </div>
-          <FaAngleDown />
-        </div>
-        <hr className="border-[1px] border-[#11101026]" />
-        <div className="flex justify-between items-center">
-          <div className="font-normal xs:text-sm md:text-base lg:text-base xl:text-lg text-[#111010] py-6">
-            What are the terms and conditions for the collaboration?
-          </div>
-          <FaAngleDown />
-        </div>
-        <hr className="border-[1px] border-[#11101026]" />
-        <div className="flex justify-between items-center">
-          <div className="font-normal xs:text-sm md:text-base lg:text-base xl:text-lg text-[#111010] py-6">
-            What is the minimum duration of the contract?
-          </div>
-          <FaAngleDown />
-        </div>
-        <hr className="border-[1px] border-[#11101026]" />
-      </div> */}
       <Accordion />
     </div>
   );

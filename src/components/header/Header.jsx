@@ -21,8 +21,6 @@ const Header = () => {
         <div className="flex items-center">
           <HeaderLogo />
         </div>
-
-        {/* Desktop Navigation */}
         <div className="hidden lg:flex gap-3 lg:gap-10 items-center">
           <div className="flex gap-3 lg:gap-10 ">
             {navLinks.map((link, index) => (
@@ -38,12 +36,13 @@ const Header = () => {
               </div>
             ))}
           </div>
-          <ButtonComponent styles="flex justify-center items-center h-[30px] w-[136px] bg-[#EF001C] text-[14px] rounded-[32px] text-white">
+          <ButtonComponent
+            onClick={() => alert("This button will not perform any actions")}
+            styles="flex justify-center items-center h-[30px] w-[136px] bg-[#EF001C] text-[14px] rounded-[32px] text-white"
+          >
             Get Started
           </ButtonComponent>
         </div>
-
-        {/* Hamburger Menu Icon */}
         <div className="lg:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -72,7 +71,10 @@ const Header = () => {
                 {clickedLink === index ? <ArrowDownRight /> : <ArrowUpRight />}
               </div>
             ))}
-            <ButtonComponent styles="flex justify-center items-center h-[36px] w-[160px] bg-[#EF001C] text-[16px] rounded-[32px] text-white">
+            <ButtonComponent
+              onClick={() => alert("This button will not perform any actions")}
+              styles="flex justify-center items-center h-[36px] w-[160px] bg-[#EF001C] text-[16px] rounded-[32px] text-white"
+            >
               Get Started
             </ButtonComponent>
           </div>

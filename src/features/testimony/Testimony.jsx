@@ -1,7 +1,5 @@
-import ButtonComponent from "../../components/button-component/ButtonComponent";
 import TestimonialCarousel from "../../components/testimony-carousel/TestimonyCarousel";
 import Line from "../../icons/Line";
-import testimonyOne from "../../images/acc2.png";
 
 const Testimony = () => {
   return (

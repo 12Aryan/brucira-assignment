@@ -23,6 +23,9 @@ const Hero = () => {
             </div>
             <div className="flex md:flex-row flex-col gap-[21px]">
               <ButtonComponent
+                onClick={() =>
+                  alert("This button will not perform any actions")
+                }
                 rightIcon={<RightIcon />}
                 styles="flex items-center justify-center gap-2.5 md:px-8 h-[60px] bg-[#EF001C] md:w-auto xs:w-[270px] sm:w-[350px]  font-bold rounded-[34px] text-white xs:text-xs sm:text-sm md:text-sm xl:text-base"
               >
