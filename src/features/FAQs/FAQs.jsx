@@ -1,6 +1,4 @@
-import React from "react";
 import FAQsimg from "../../images/FAQs.png";
-import { FaAngleDown } from "react-icons/fa";
 import Accordion from "../../components/accordion/Accordion";
 
 const FAQs = () => {
