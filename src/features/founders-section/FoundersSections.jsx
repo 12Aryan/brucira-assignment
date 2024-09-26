@@ -1,4 +1,3 @@
-import React from "react";
 import Profile1 from "../../icons/Profile1";
 import Profile2 from "../../icons/Profile2";
 
@@ -27,12 +26,13 @@ const FoundersSections = () => {
       component: Profile2,
     },
   ];
+
   return (
-    <div className="flex gap-8">
+    <div className="flex md:flex-row flex-col xs:gap-6 xl:gap-8 xl:justify-normal justify-between w-[90%] items-center md:items-start">
       {profiles.map((profile) => (
         <div
           key={profile.id}
-          className="flex flex-col gap-6 border-l-[1px] border-[#21272A26] py-6 px-4"
+          className="flex flex-col gap-6 border-l-[1px] border-[#21272A26] py-6 px-4 items-center md:items-start"
         >
           <profile.component />
           <div>
