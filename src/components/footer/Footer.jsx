@@ -74,7 +74,6 @@ const Footer = () => {
             Copyright ©2023 Red Bangle
           </div>
           <div className="flex gap-4 lg:gap-8 ">
-            #111010
             <div className="font-base font-normal text-[#111010]">
               Privacy Policy
             </div>
