@@ -1,8 +1,8 @@
 import MarqueeComponent from "../../components/marquee/MarqueeComponent";
-import Uvi from "../../icons/UVI";
+import UnleashImpactLogo from "../../icons/UnleashImpactLogo";
 
 const UnleashImpact = () => {
-  const UVI = [<Uvi key="UVI-logo" />];
+  const UVI = [<UnleashImpactLogo key="UVI-logo" />];
 
   return (
     <div className="bg-[#111010]">

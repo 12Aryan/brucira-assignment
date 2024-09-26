@@ -1,4 +1,4 @@
-const Uvi = () => {
+const UnleashImpactLogo = () => {
   return (
     <svg
       width="1440"
@@ -20,4 +20,4 @@ const Uvi = () => {
   );
 };
 
-export default Uvi;
+export default UnleashImpactLogo;
